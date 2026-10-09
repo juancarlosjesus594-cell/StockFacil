@@ -1,22 +1,19 @@
 using StockFacil.Models;
 
 namespace StockFacil.Services
+namespace StockFacil.Services
 {
     public class ProductoService
     {
-        public bool ValidarProducto(Producto producto)
+        public bool ValidarProducto(string nombre, decimal precio)
         {
-            if (producto == null)
+            // RF-02: Verificar que el nombre no esté vacío y el precio sea mayor que cero
+            if (string.IsNullOrWhiteSpace(nombre))
             {
                 return false;
             }
 
-            if (string.IsNullOrWhiteSpace(producto.Nombre))
-            {
-                return false;
-            }
-
-            if (producto.Precio <= 0)
+            if (precio <= 0)
             {
                 return false;
             }
