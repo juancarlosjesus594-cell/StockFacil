@@ -1,13 +1,15 @@
 using StockFacil.Models;
-
-namespace StockFacil.Services
 namespace StockFacil.Services
 {
     public class ProductoService
     {
+        /// <summary>
+        /// Valida que el producto cumpla con las reglas del requisito RF-02.
+        /// - El nombre no debe estar vacío.
+        /// - El precio debe ser estrictamente mayor a 0.
+        /// </summary>
         public bool ValidarProducto(string nombre, decimal precio)
         {
-            // RF-02: Verificar que el nombre no esté vacío y el precio sea mayor que cero
             if (string.IsNullOrWhiteSpace(nombre))
             {
                 return false;
