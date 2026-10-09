@@ -1,19 +1,33 @@
-# StockFácil - Sistema de control de inventario
+# StockFácil
 
 ## Propósito
-Apoyar el control de los productos disponibles en el almacén de TecnoMarket.
+
+StockFácil es un sistema sencillo para apoyar el control
+de productos disponibles en el almacén de TecnoMarket.
 
 ## Módulos principales
+
 - Productos
-- Stock
-- Consultas
+- Validación de productos
+- Control de stock
+- Consulta de disponibilidad
 
 ## Estructura del proyecto
-- Controllers/: Coordina solicitudes de productos.
-- Models/: Representa las entidades del sistema.
-- Services/: Contiene reglas y lógica del negocio.
-- Data/: Gestiona el acceso a los datos.
-- Views/: Interacción con el usuario.
+
+### Controllers
+Coordina las solicitudes relacionadas con los productos.
+
+### Models
+Representa las entidades del sistema.
+
+### Services
+Contiene las reglas y lógica del negocio.
+
+### Data
+Gestiona el acceso a los datos.
+
+### Views
+Representa la interacción con el usuario.
 
 ## Requisito trabajado
 
