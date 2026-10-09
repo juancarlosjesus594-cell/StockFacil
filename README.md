@@ -1,33 +1,22 @@
-# StockFácil
+# StockFácil - Sistema de Control de Inventario
 
-## Propósito
+## Propósito del Sistema
+StockFácil es un sistema diseñado para apoyar a TecnoMarket en el control y gestión eficiente de los productos disponibles en su almacén. Permite registrar, validar, actualizar el stock y consultar la disponibilidad de los artículos.
 
-StockFácil es un sistema sencillo para apoyar el control
-de productos disponibles en el almacén de TecnoMarket.
+## Módulos Principales
+- **Registro de Productos (RF-01):** Permite ingresar nuevos productos con su código, nombre, precio y cantidad en stock.
+- **Validación de Productos (RF-02):** Garantiza que los productos tengan un nombre válido y un precio mayor a cero.
+- **Actualización de Stock (RF-03):** Permite modificar la cantidad disponible de cada producto.
+- **Consulta de Disponibilidad (RF-04):** Permite verificar la existencia de stock para un producto específico.
 
-## Módulos principales
+## Estructura del Proyecto
+El proyecto está organizado siguiendo el principio de separación de responsabilidades:
 
-- Productos
-- Validación de productos
-- Control de stock
-- Consulta de disponibilidad
-
-## Estructura del proyecto
-
-### Controllers
-Coordina las solicitudes relacionadas con los productos.
-
-### Models
-Representa las entidades del sistema.
-
-### Services
-Contiene las reglas y lógica del negocio.
-
-### Data
-Gestiona el acceso a los datos.
-
-### Views
-Representa la interacción con el usuario.
+- `Controllers/`: Coordina las solicitudes e interacciones relacionadas con los productos (`ProductoController.cs`).
+- `Models/`: Contiene las entidades y modelos de datos del sistema (`Producto.cs`).
+- `Services/`: Contiene las reglas de negocio y validaciones del sistema (`ProductoService.cs`).
+- `Data/`: Gestiona el acceso y persistencia de los datos (`ProductoRepository.cs`).
+- `Views/`: Representa la interfaz de usuario para la interacción con el sistema (`ProductoView.cs`).
 
 ## Requisito trabajado
 
